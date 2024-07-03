@@ -1,0 +1,33 @@
+name: VanillaPoints
+version: 1.0-SNAPSHOT
+main: dev.vaniley.vanillapoints.VanillaPoints
+api-version: 1.20
+
+commands:
+  setspawn:
+    description: Set the spawn point
+    usage: /setspawn
+    permission: vanillapoints.setspawn
+  spawn:
+    description: Get spawn coordinates
+    usage: /spawn
+  sethome:
+    description: Set your home point
+    usage: /sethome
+  home:
+    description: Get your home coordinates
+    usage: /home
+  setwarp:
+    description: Set a warp point
+    usage: /setwarp <name>
+  warp:
+    description: Get warp point coordinates
+    usage: /warp <name>
+  delwarp:
+    description: Delete a warp point
+    usage: /delwarp <name>
+
+permissions:
+  vanillapoints.setspawn:
+    description: Allows setting the spawn point
+    default: op
